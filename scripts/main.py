@@ -1,14 +1,15 @@
 from datetime import datetime
+from datetime import date
 import time
 import webbrowser
 
 current_time = str()
 deactivator = False
-time1 = datetime(year=2021, month=11, day=25, hour=23, minute=17, second=0)
+today = date.today()
+time1 = datetime(year=today.year, month=today.month, day=today.day, hour=11, minute=52, second=30)
 now = datetime
 
 hr1 = datetime.strftime(time1, "%H,%M,%S")
-
 def SetTime():
     time.sleep(1)
     timeNow = datetime.now()
@@ -18,6 +19,8 @@ def SetTime():
 while deactivator == False:
     now = SetTime()
     print(now)
+    print(type(now))
+    print(type(hr1))
     if now == hr1:
         webbrowser.open("https://github.com/EduardoFariaKruger/classTimer")
         deactivator = True
