@@ -27,9 +27,7 @@ def setDay(current, dia, lista):
         link1 = 'meet.google.com/utf-egzc-gbk'
         lista.append(datetime.strftime(alarm1, "%H,%M,%S"))
         lista.append(datetime.strftime(alarm1, "%H,%M,%S"))
-        alarm2 = datetime(year=current.year, month=current.month, day=current.day, hour=9, minute=00, second=00)
-        link2 = 'https://meet.google.com/bhm-jtod-anb'
-        lista.append(datetime.strftime(alarm2, "%H,%M,%S"))
+        alarm2 = datetime(year=current.year, month=current.month, day=current).
         lista.append(datetime.strftime(alarm2, "%H,%M,%S"))
         alarm3 = datetime(year=current.year, month=current.month, day=current.day, hour=10, minute=10, second=00)
         link3 = 'meet.google.com/nze-nwkb-dut'
@@ -41,3 +39,4 @@ c = int(0)
 data = lista[0]
 link = lista[1]
 print(data, link)
+print(lista)
