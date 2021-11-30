@@ -21,6 +21,7 @@ while deactivator == False:
     print(now)
     print(type(now))
     print(type(hr1))
+    print(datetime.strftime(today, "%A"))
     if now == hr1:
         webbrowser.open("https://github.com/EduardoFariaKruger/classTimer")
         deactivator = True
